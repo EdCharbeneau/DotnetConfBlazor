@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ComponentLibs.Components.Spinners
+namespace Spinkit
 {
     public class SpinnerBase : ComponentBase
     {

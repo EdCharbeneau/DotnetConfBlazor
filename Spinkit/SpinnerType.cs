@@ -1,4 +1,4 @@
-﻿namespace ComponentLibs.Components.Spinners
+﻿namespace Spinkit
 {
     public enum SpinnerType
     {
