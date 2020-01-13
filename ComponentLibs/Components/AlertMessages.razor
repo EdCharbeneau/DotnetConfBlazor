@@ -1,0 +1,16 @@
+﻿@typeparam TItem
+
+@foreach (var item in Items)
+{
+    <AlertMessage>
+        @AlertTemplate(item)
+    </AlertMessage>
+}
+
+@code {
+    [Parameter]
+    public RenderFragment<TItem> AlertTemplate { get; set; }
+
+    [Parameter]
+    public IReadOnlyList<TItem> Items { get; set; }
+}

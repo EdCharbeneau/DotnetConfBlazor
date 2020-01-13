@@ -3,15 +3,22 @@
 <h1>Example 2</h1>
 <h1>Alert Collections</h1>
 
-<p>Current count: @currentCount</p>
+<p>Current count: @alerts.Count()</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<hr />
+<AlertMessages Items="alerts" Context="message">
+    <AlertTemplate>
+        <span>This is an alert @message</span>
+    </AlertTemplate>
+</AlertMessages>
+
 @code {
-    private int currentCount = 0;
+    List<int> alerts = new List<int>();
 
     private void IncrementCount()
     {
-        currentCount++;
+        alerts.Add(alerts.Count() + 1);
     }
 }
