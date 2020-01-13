@@ -1,0 +1,42 @@
+﻿@inherits SpinnerBase
+@switch (DefaultSpinner)
+{
+    case SpinnerType.Chase:
+        <Chase Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerType.Circle:
+        <Circle Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerType.CircleFade:
+        <CircleFade Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerType.Flow:
+        <Flow Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerType.Grid:
+        <Grid Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerType.Plane:
+        <Plane Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerType.Pulse:
+        <Pulse Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerType.Swing:
+        <Swing Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerType.Wander:
+        <Wander Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerType.Wave:
+        <Wave Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+    case SpinnerType.Bounce:
+    default:
+        <Bounce Center="@Center" Size="@Size" Color="@Color" @attributes="AdditionalAttributes" />
+        break;
+}
+
+@code {
+    [Parameter] public SpinnerType DefaultSpinner { get; set; }
+}

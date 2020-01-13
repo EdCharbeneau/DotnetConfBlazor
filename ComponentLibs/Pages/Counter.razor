@@ -1,0 +1,17 @@
+﻿@page "/counter"
+
+<h1>Example 2</h1>
+<h1>Alert Collections</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
