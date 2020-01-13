@@ -8,7 +8,7 @@
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 <hr />
-<AlertMessages Items="alerts" Context="message">
+<AlertMessages Items="alerts" Context="message" OnDelete="DeleteItem">
     <AlertTemplate>
         <span>This is an alert @message</span>
     </AlertTemplate>
@@ -20,5 +20,10 @@
     private void IncrementCount()
     {
         alerts.Add(alerts.Count() + 1);
+    }
+
+    void DeleteItem(object item)
+    {
+        alerts.Remove((int)item);
     }
 }
