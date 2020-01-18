@@ -12,4 +12,4 @@ Included:
   - [BlazorPro.Spinkit](https://www.nuget.org/packages/BlazorPro.Spinkit/)
   - [Blazor Pro Snippets Extension](https://marketplace.visualstudio.com/items?itemName=EdCharbeneau.blazorpro-snippets)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sCrQpYL2vyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Watch the video](https://img.youtube.com/vi/sCrQpYL2vyg/maxresdefault.jpg)](https://www.youtube.com/embed/sCrQpYL2vyg)
